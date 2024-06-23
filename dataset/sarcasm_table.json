@@ -1,0 +1,36 @@
+{
+	"name": "sarcasm_table",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "article_link",
+				"type": "varchar"
+			},
+			{
+				"name": "headline",
+				"type": "varchar"
+			},
+			{
+				"name": "is_sarcastic",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "sarcasm"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

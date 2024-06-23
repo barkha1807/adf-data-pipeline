@@ -1,0 +1,9 @@
+{
+	"name": "barkha-demo-datafactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b6a1b30d-5714-4398-9fd2-f2647214de77",
+		"tenantId": "04792c07-b45a-4185-8893-dd49cbf708eb"
+	}
+}

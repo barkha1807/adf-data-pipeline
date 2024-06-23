@@ -1,0 +1,33 @@
+{
+	"name": "sarcasm",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "sarcasm_blob.json",
+				"container": "adfdemocontainer"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"article_link": {
+					"type": "string"
+				},
+				"headline": {
+					"type": "string"
+				},
+				"is_sarcastic": {
+					"type": "integer"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
